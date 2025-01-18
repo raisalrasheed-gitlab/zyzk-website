@@ -1,9 +1,8 @@
-import { Button } from '@material-tailwind/react';
+import Home from './pages/dashBoard/Home';
 const App = () => {
   return (
     <>
-      <h1 className="bg-red-400">Hell</h1>
-      <Button>hello</Button>
+      <Home />
     </>
   );
 };
