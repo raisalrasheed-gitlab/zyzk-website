@@ -10,12 +10,12 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="h-20  flex  justify-between items-center px-12  md:border-b-2 border-gray-300 relative">
+      <div className="bg-white h-20  flex  justify-between items-center lg:px-16 px-8  md:border-b-2 border-gray-300 z-1 top-0 sticky">
         <div className="flex gap-10 items-center">
           <img src={Logo} />
           <div
-            className={`absolute top-20  left-10 py-10 px-12 md:px-5 md:bg-none w-full md:static ${
-              check ? '-left-40' : 'left-10'
+            className={`absolute top-20  left-0 md:py-0 py-10 px-16 md:px-0 md:bg-none w-full md:static bg-white ${
+              check ? 'left-[-100%]' : 'left-0'
             }`}
           >
             <ul className=" flex flex-col md:flex-row md:gap-12 gap-16  text-base font-semibold leading-4 text-gray-700  cursor-pointer ">
