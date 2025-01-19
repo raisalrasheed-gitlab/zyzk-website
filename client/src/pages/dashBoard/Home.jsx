@@ -1,4 +1,5 @@
 import Navbar from '../../components/Navbar/navbar';
+import Card from '../../components/ExpandCard/card';
 import { LuArrowRight } from 'react-icons/lu';
 import { Button } from '@material-tailwind/react';
 import { FiPlayCircle } from 'react-icons/fi';
@@ -19,6 +20,20 @@ import icon6 from '../../assets/images/icon6.png';
 import Logomark from '../../assets/images/Logomark.png';
 import Avatar from '../../assets/images/Avatar.png';
 const Home = () => {
+  const data = [
+    {
+      head: 'Can I change my plan later?',
+    },
+    {
+      head: 'What is your cancellation policy?',
+    },
+    {
+      head: 'Can other info be added to an invoice?',
+    },
+    {
+      head: 'How does billing work?',
+    },
+  ];
   return (
     <>
       <Navbar />
@@ -87,7 +102,7 @@ const Home = () => {
           </div>
         </div>
         {/* features parts */}
-        <div className=" w-full md:h-[836px]  flex flex-col  md:justify-center gap-14">
+        <div className=" w-full xl:h-[836px]  flex flex-col  md:justify-center gap-14">
           <div className="text-center flex flex-col justify-center items-center gap-4">
             <h2 className="text-base text-[#E63F3A] font-semibold">Features</h2>
             <h1 className="text-3xl font-semibold tracking-tight leading-10">
@@ -101,7 +116,7 @@ const Home = () => {
               </h2>
             </div>
           </div>
-          <div className=" w-full md:h-[420px] flex justify-between flex-wrap gap-16">
+          <div className=" w-full xl:h-[420px] h-fit flex justify-between flex-wrap gap-16 ">
             <div className="w-[384px] h-[178px] flex flex-col justify-between">
               <div className="flex justify-center ">
                 <img
@@ -179,7 +194,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="w-full h-[552px] border-2 bg-[#F9FAFB] flex flex-col justify-center gap-8">
+        <div className="w-full h-[552px] bg-[#F9FAFB] flex flex-col justify-center gap-8">
           <div className="flex justify-center gap-2">
             <img src={Logomark} />
             <h2 className="font-bold text-2xl font-new tracking-widest">
@@ -198,6 +213,32 @@ const Home = () => {
             <h2 className="text-lg font-new text-[#475467]">
               Product Manager, Sisyphus
             </h2>
+          </div>
+        </div>
+        <div>
+          <div className="flex flex-col gap-4 xl:h-[94px] mt-5 mb-5">
+            <h2 className="text-md font-new font-semibold md:text-4xl text-3xl ">
+              Frequently asked questions
+            </h2>
+            <p className="text-lg  md:text-xl font-new text-[#475467]">
+              Everything you need to know about the product and billing.
+            </p>
+          </div>
+          <div className="xl:w-[768px] max-h-[610px]  grid gap-10 mt-4">
+            <div className="max-h-[84px]">
+              <Card
+                className="border-t-0 xl:max-h-[84px] p-2 xl:p-0"
+                head="Is there a free trial available?"
+              />
+            </div>
+            {data.map(item => {
+              return (
+                <Card
+                  className="border-t-2 xl:max-h-[84px] p-2 xl:p-0"
+                  head={item.head}
+                />
+              );
+            })}
           </div>
         </div>
       </div>
