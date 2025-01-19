@@ -46,8 +46,8 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="h-fit border-2 w-11/12 mx-auto flex flex-col items-center text-center gap-5 pb-10">
-        <div className=" w-[355px] bg-red-50 h-[32px] mt-20 rounded-2xl border-2 border-red-100 flex items-center justify-around text-red-400">
+      <div className="h-fit p-x-2 w-11/12 mx-auto flex flex-col items-center text-center gap-5 pb-10">
+        <div className=" max-w-[355px] bg-red-50 h-[32px] mt-20 rounded-2xl border-2 border-red-100 hover:bg-red-200 hover:text-black flex items-center justify-around text-red-400">
           <button className="bg-white rounded-xl border-2 border-red-100 text-sm px-2">
             New feature
           </button>

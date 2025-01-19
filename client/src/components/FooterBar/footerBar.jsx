@@ -8,7 +8,12 @@ const FooterBar = () => {
             <h1 className="text-sm font-semibold text-[#667085]">Product</h1>
             <h2 className="tetx-base font-semibold">Overview</h2>
             <h2 className="tetx-base font-semibold">Features</h2>
-            <h2 className="tetx-base font-semibold">Solutions</h2>
+            <div className="flex gap-3 item-center">
+              <h2 className="tetx-base font-semibold flex">Solutions</h2>
+              <div className="w-[42px] h-[22px] bg-[#ABEFC6] text-[#067647]  rounded-2xl text-center text-xs font-medium leading-5">
+                New
+              </div>
+            </div>
             <h2 className="tetx-base font-semibold">Tutorials</h2>
             <h2 className="tetx-base font-semibold">Pricing</h2>
             <h2 className="tetx-base font-semibold">Releases</h2>
@@ -61,7 +66,7 @@ const FooterBar = () => {
         </div>
         <div className="w-full min-h-[64px] px-10 flex md:items-end md:justify-between flex-col md:flex-row justify-start text-left items-start gap-5">
           <img src={Logo} />
-          <h2 className="text-lg text-[#667085]">
+          <h2 className="text-md text-[#667085]">
             © 2077 zysktechnologies. All rights reserved.
           </h2>
         </div>
