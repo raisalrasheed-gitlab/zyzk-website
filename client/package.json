@@ -1,7 +1,7 @@
 {
   "name": "client",
   "private": true,
-  "homepage": "http://raisalrasheed-gitlab.github.io/zyzk-website",
+  "homepage": "https://zyzk-website-5gpe-r7hthdcib-raisalrasheed-gitlabs-projects.vercel.app/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
