@@ -10,7 +10,10 @@ module.exports = withMT({
   ],
   theme: {
     extend: {
-      fontFamily: { inter: ['Roboto', 'serif'] },
+      fontFamily: {
+        inter: ['Roboto', 'serif'],
+        new: ['Inter', 'serif'],
+      },
     },
   },
   plugins: [],

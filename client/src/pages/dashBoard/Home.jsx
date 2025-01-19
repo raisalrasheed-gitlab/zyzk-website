@@ -16,11 +16,13 @@ import icon3 from '../../assets/images/icon3.png';
 import icon4 from '../../assets/images/icon4.png';
 import icon5 from '../../assets/images/icon5.png';
 import icon6 from '../../assets/images/icon6.png';
+import Logomark from '../../assets/images/Logomark.png';
+import Avatar from '../../assets/images/Avatar.png';
 const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="h-fit border-2 w-11/12 mx-auto flex flex-col items-center text-center gap-5">
+      <div className="h-fit border-2 w-11/12 mx-auto flex flex-col items-center text-center gap-5 pb-10">
         <div className=" w-[355px] bg-red-50 h-[32px] mt-20 rounded-2xl border-2 border-red-100 flex items-center justify-around text-red-400">
           <button className="bg-white rounded-xl border-2 border-red-100 text-sm px-2">
             New feature
@@ -175,6 +177,27 @@ const Home = () => {
                 help.
               </p>
             </div>
+          </div>
+        </div>
+        <div className="w-full h-[552px] border-2 bg-[#F9FAFB] flex flex-col justify-center gap-8">
+          <div className="flex justify-center gap-2">
+            <img src={Logomark} />
+            <h2 className="font-bold text-2xl font-new tracking-widest">
+              Sisyphus
+            </h2>
+          </div>
+          <div className="flex justify-center">
+            <h2 className="font-new w-[1126px] text-5xl font-medium tracking-tighter">
+              We’ve been using Untitled to kick start every new project and
+              can’t imagine working without it.
+            </h2>
+          </div>
+          <div className="flex justify-center flex-col items-center gap-2">
+            <img className="w-[64px]" src={Avatar} />
+            <h2 className="text-lg font-semibold font-new">Candice Wu</h2>
+            <h2 className="text-lg font-new text-[#475467]">
+              Product Manager, Sisyphus
+            </h2>
           </div>
         </div>
       </div>
