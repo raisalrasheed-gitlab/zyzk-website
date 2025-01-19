@@ -1,5 +1,7 @@
 import Navbar from '../../components/Navbar/navbar';
 import Card from '../../components/ExpandCard/card';
+import BlogCard from '../../components/BlogCard/blogcard';
+import FooterBar from '../../components/FooterBar/footerBar';
 import { LuArrowRight } from 'react-icons/lu';
 import { Button } from '@material-tailwind/react';
 import { FiPlayCircle } from 'react-icons/fi';
@@ -19,6 +21,13 @@ import icon5 from '../../assets/images/icon5.png';
 import icon6 from '../../assets/images/icon6.png';
 import Logomark from '../../assets/images/Logomark.png';
 import Avatar from '../../assets/images/Avatar.png';
+import AvatarGroup from '../../assets/images/AvatarGroup.png';
+import Blog1 from '../../assets/images/Blog1.png';
+import Blog2 from '../../assets/images/Blog2.png';
+import Blog3 from '../../assets/images/Blog3.png';
+import BlogAvatar1 from '../../assets/images/BlogAvatar.png';
+import BlogAvatar2 from '../../assets/images/BlogAvatar2.png';
+import BlogAvatar3 from '../../assets/images/BlogAvatar3.png';
 const Home = () => {
   const data = [
     {
@@ -241,6 +250,85 @@ const Home = () => {
             })}
           </div>
         </div>
+        <div className="mt-5 bg-[#F9FAFB] w-full h-[300px] rounded-2xl flex flex-col items-center justify-center gap-4">
+          <div>
+            <img src={AvatarGroup} alt="" />
+          </div>
+          <h2 className="text-xl font-semibold font-new">
+            Still have questions?
+          </h2>
+          <p className="text-lg font-new text-[#475467]">
+            Can’t find the answer you’re looking for? Please chat to our
+            friendly team.
+          </p>
+          <Button className="text-sm normal-case font-inter w-[134px] h-[48px] bg-[#E63F3A] tracking-wider">
+            Get in touch
+          </Button>
+        </div>
+        <div className="flex flex-col w-full gap-20">
+          <div className="w-full min-h-[130px] mt-20 flex flex-col gap-4">
+            <div className="flex justify-between px-10 ">
+              <h2 className="text-[#E63F3A] text-base font-semibold">
+                Our blog
+              </h2>
+              <Button className="bg-[#E63F3A] h-12 hidden md:block">
+                View all posts
+              </Button>
+            </div>
+            <h2 className="text-left px-10 text-4xl font-semibold font-new tracking-tight">
+              Lastest blog posts
+            </h2>
+            <h3 className="text-left px-10 text-[#475467] text-xl text-new">
+              Tool and strategies modern teams need to help their companies
+              grow.
+            </h3>
+          </div>
+          <div className="flex justify-around flex-wrap md:flex-nowrap md:flex-row items-center gap-16 xl:gap-0">
+            <BlogCard
+              img={Blog1}
+              blogimg={BlogAvatar1}
+              name="Design"
+              head="UX review presentations"
+              detail="How do you create compelling presentations that wow your colleagues and impress your managers?"
+              proname="Olivia Rhye"
+              date="20 Jan 2024"
+            />
+            <BlogCard
+              img={Blog2}
+              blogimg={BlogAvatar2}
+              name="Product"
+              head="Migrating to Linear 101"
+              detail="Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started."
+              proname="Phoenix Baker"
+              date="19 Jan 2024"
+            />
+            <BlogCard
+              img={Blog3}
+              blogimg={BlogAvatar3}
+              name="Software Engineering"
+              head="Building your API stack"
+              detail="The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them."
+              proname="Lana Steiner"
+              date="18 Jan 2024"
+            />
+          </div>
+          <Button className="bg-[#E63F3A] h-12 md:hidden">
+            View all posts
+          </Button>
+        </div>
+        <div className="h-[373px] bg-[#F9FAFB] w-full font-new flex flex-col justify-center items-center gap-6 mt-14">
+          <h1 className="text-4xl font-semibold tracking-tight">
+            Start your free trial
+          </h1>
+          <h2 className="text-xl text-[#475467]">
+            Join over 4,000+ startups already growing with Untitled.
+          </h2>
+          <div className="flex justify-center gap-8 flex-col w-full md:flex-row md:gap-10">
+            <Button className="bg-white text-black text-md">Learn more</Button>
+            <Button className="bg-[#E63F3A] text-md ">Get started</Button>
+          </div>
+        </div>
+        <FooterBar />
       </div>
     </>
   );
