@@ -10,6 +10,12 @@ import CompanyLogo3 from '../../assets/images/companylogo3.png';
 import CompanyLogo4 from '../../assets/images/companylogo4.png';
 import CompanyLogo5 from '../../assets/images/companylogo5.png';
 import CompanyLogo6 from '../../assets/images/companylogo6.png';
+import icon1 from '../../assets/images/icon1.png';
+import icon2 from '../../assets/images/icon2.png';
+import icon3 from '../../assets/images/icon3.png';
+import icon4 from '../../assets/images/icon4.png';
+import icon5 from '../../assets/images/icon5.png';
+import icon6 from '../../assets/images/icon6.png';
 const Home = () => {
   return (
     <>
@@ -79,6 +85,98 @@ const Home = () => {
           </div>
         </div>
         {/* features parts */}
+        <div className=" w-full md:h-[836px]  flex flex-col  md:justify-center gap-14">
+          <div className="text-center flex flex-col justify-center items-center gap-4">
+            <h2 className="text-base text-[#E63F3A] font-semibold">Features</h2>
+            <h1 className="text-3xl font-semibold tracking-tight leading-10">
+              Analytics that feels like it’s from the future
+            </h1>
+            <div className="max-w-[700px]">
+              <h2 className="text-xl text-[#475467]">
+                Powerful, self-serve product and growth analytics to help you
+                convert, engage, and retain more users. Trusted by over 4,000
+                startups.
+              </h2>
+            </div>
+          </div>
+          <div className=" w-full md:h-[420px] flex justify-between flex-wrap gap-16">
+            <div className="w-[384px] h-[178px] flex flex-col justify-between">
+              <div className="flex justify-center ">
+                <img
+                  src={icon1}
+                  className="w-14 h-14 border-2 p-4 rounded-xl"
+                />
+              </div>
+              <h2 className="text-xl font-semibold ">Share team inboxes</h2>
+              <p className="text-[#475467] text-base">
+                Whether you have a team of 2 or 200, our shared team inboxes
+                keep everyone on the same page and in the loop.
+              </p>
+            </div>
+            <div className=" w-[384px] h-[178px]">
+              <div className="flex justify-center ">
+                <img src={icon2} className="w-16 h-16 p-1 rounded-xl" />
+              </div>
+              <h2 className="text-xl font-semibold ">
+                Deliver instant answers
+              </h2>
+              <p className="text-[#475467] text-base">
+                An all-in-one customer service platform that helps you balance
+                everything your customers need to be happy.
+              </p>
+            </div>
+            <div className=" w-[384px] h-[178px]">
+              <div className="flex justify-center ">
+                <img src={icon3} className="w-16 h-16 p-1 rounded-xl" />
+              </div>
+              <h2 className="text-xl font-semibold ">
+                Manage your team with reports
+              </h2>
+              <p className="text-[#475467] text-base">
+                Measure what matters with Untitled’s easy-to-use reports. You
+                can filter, export, and drilldown on the data in a couple
+                clicks.
+              </p>
+            </div>
+            <div className="w-[384px] h-[178px]">
+              <div className="flex justify-center ">
+                <img src={icon4} className="w-16 h-16 p-1 rounded-xl" />
+              </div>
+              <h2 className="text-xl font-semibold ">Connect with customers</h2>
+              <p className="text-[#475467] text-base">
+                Solve a problem or close a sale in real-time with chat. If no
+                one is available, customers are seamlessly routed to email
+                without confusion.
+              </p>
+            </div>
+            <div className="w-[384px] h-[178px]">
+              <div className="flex justify-center ">
+                <img src={icon5} className="w-16 h-16 p-1 rounded-xl" />
+              </div>
+              <h2 className="text-xl font-semibold ">
+                Connect the tools you already use
+              </h2>
+              <p className="text-[#475467] text-base">
+                Explore 100+ integrations that make your day-to-day workflow
+                more efficient and familiar. Plus, our extensive developer
+                tools.
+              </p>
+            </div>
+            <div className="w-[384px] h-[178px]">
+              <div className="flex justify-center ">
+                <img src={icon6} className="w-16 h-16 p-1 rounded-xl" />
+              </div>
+              <h2 className="text-xl font-semibold ">
+                Our people make the difference
+              </h2>
+              <p className="text-[#475467] text-base">
+                We’re an extension of your customer service team, and all of our
+                resources are free. Chat to our friendly team 24/7 when you need
+                help.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
