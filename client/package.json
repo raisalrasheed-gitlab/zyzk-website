@@ -1,7 +1,7 @@
 {
   "name": "client",
   "private": true,
-  "homepage": "./",
+  "homepage": "https://github.com/raisalrasheed-gitlab/zyzk-website",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
