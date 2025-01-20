@@ -47,11 +47,13 @@ const Home = () => {
     <>
       <Navbar />
       <div className="h-fit p-x-2 w-11/12 mx-auto flex flex-col items-center text-center gap-5 pb-10">
-        <div className=" max-w-[355px] bg-red-50 h-[32px] mt-20 rounded-2xl border-2 border-red-100 hover:bg-red-200 hover:text-black flex items-center justify-around text-red-400">
-          <button className="bg-white rounded-xl border-2 border-red-100 sm:text-sm text-xs px-2 font-new">
+        <div className=" max-w-[360px] bg-red-50 sm:h-[32px] mt-20 rounded-2xl border-2 border-red-100 hover:bg-red-200 hover:text-black flex items-center justify-around text-red-400 gap-2">
+          <button className="tracking-tight bg-white rounded-xl border-2 border-red-100 sm:text-sm text-xs px-2 font-new">
             New feature
           </button>
-          <h2 className="font-new text-sm">Check out the team dashBoard</h2>
+          <h2 className="font-new sm:text-sm text-xs tracking-tight">
+            Check out the team dashBoard
+          </h2>
           <LuArrowRight className="text-red-200 text-xl" />
         </div>
         <div>
