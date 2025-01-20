@@ -47,7 +47,7 @@ const Home = () => {
     <>
       <Navbar />
       <div className="h-fit p-x-2 w-11/12 mx-auto flex flex-col items-center text-center gap-5 pb-10">
-        <div className=" max-w-[360px] bg-red-50 sm:h-[32px] mt-20 rounded-2xl border-2 border-red-100 hover:bg-red-200 hover:text-black flex items-center justify-around text-red-400 gap-2">
+        <div className=" max-w-[360px] bg-red-50 sm:h-[32px] h-fit mt-20 rounded-2xl border-2 border-red-100 hover:bg-red-200 hover:text-black flex items-center justify-around text-red-400">
           <button className="tracking-tight bg-white rounded-xl border-2 border-red-100 sm:text-sm text-xs px-2 font-new">
             New feature
           </button>
