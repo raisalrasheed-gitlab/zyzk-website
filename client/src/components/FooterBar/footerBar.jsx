@@ -10,7 +10,7 @@ const FooterBar = () => {
             <h2 className="tetx-base font-semibold">Features</h2>
             <div className="flex gap-3 item-center">
               <h2 className="tetx-base font-semibold flex">Solutions</h2>
-              <div className="w-[42px] h-[22px] bg-[#ABEFC6] text-[#067647]  rounded-2xl text-center text-xs font-medium leading-5">
+              <div className=" w-[42px] h-[22px] bg-[#ABEFC6] text-[#067647]  rounded-2xl text-center text-xs font-medium leading-5">
                 New
               </div>
             </div>

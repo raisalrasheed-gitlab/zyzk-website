@@ -205,7 +205,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="w-full h-[552px] bg-[#F9FAFB] flex flex-col justify-center gap-8">
+        <div className="w-full min-h-[552px] bg-[#F9FAFB] flex flex-col justify-center gap-8 py-4">
           <div className="flex justify-center gap-2">
             <img src={Logomark} />
             <h2 className="font-bold text-2xl font-new tracking-widest">
